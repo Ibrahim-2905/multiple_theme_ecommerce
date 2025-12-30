@@ -1,0 +1,11 @@
+import EmailSubscription1 from "./EmailSubscription1";
+import EmailSubscription2 from "./EmailSubscription2";
+import EmailSubscription3 from "./EmailSubscription3";
+import EmailSubscription4 from "./EmailSubscription4";
+
+export const EmailSubscriptionMap = {
+    emailSubscription1: EmailSubscription1,
+    emailSubscription2: EmailSubscription2,
+    emailSubscription3: EmailSubscription3,
+    emailSubscription4: EmailSubscription4,
+}
