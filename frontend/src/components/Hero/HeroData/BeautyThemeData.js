@@ -1,9 +1,9 @@
-const ClassicFurnitureHeroData = [
+export const BeautyThemeData = [
   {
-    subtitle: "20% OFF. END MONDAY",
-    title: "Smart Table",
-    description: "Save up to $500 on outdoor packages",
-    media: "/ClassicFurniture/carouselvideo.mp4",
+    subtitle: "SAVE UP TO 20%",
+    title: "BE YOURSELF MORE DO CARE MORE",
+    // description: "Save up to $500 on outdoor packages",
+    media: "ThemeBeauty/beautycarousel1.png",
     mediaType: "image",
     button: "SHOP NOW",
     position: "left",
@@ -12,17 +12,15 @@ const ClassicFurnitureHeroData = [
     buttonText: "text-white"
   },
   {
-    subtitle: "30% OFF.END MONDAY",
-    title: "Modern Design",
-    description: "Just from 5$-20$",
-    media: "/ClassicFurniture/carousel1.jpeg",
+    subtitle: "SAVE UP TO 20%",
+    title: "BE YOURSELF MORE DO CARE MORE",
+    // description: "Just from 5$-20$",
+    media: "ThemeBeauty/beautycarousel2.png",
     mediaType: "image",
-    button: "BUY NOW",
+    button: "ALL PRODUCTS",
     position: "left",
     textColor: "text-black",
     buttonBg: "bg-black",
     buttonText: "text-white"
   }
 ];
-
-export { ClassicFurnitureHeroData };

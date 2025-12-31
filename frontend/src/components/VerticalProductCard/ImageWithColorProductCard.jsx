@@ -45,7 +45,7 @@ export const ImageWithColorProductCard = ({
         {/* Button */}
         <AnimatedButton
           text={buttonText}
-          onlyBottomBorder
+        //   onlyBottomBorder
           textColor="text-black"
           onClick={()=> router.push(link)}
         />

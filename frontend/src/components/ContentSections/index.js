@@ -1,6 +1,7 @@
 import AboutDesignSection from "./AboutDesignSection";
 import AgencySection from "./AgencySection";
 import HeadingAndDescription from "./HeadingAndDescription";
+import { ImagesShowCase } from "./ImagesShowCase";
 import ShippingFeatures from "./ShippingFeatures";
 import StoreTimings from "./StoreTimings";
 import { TeamCardWrapper } from "./TeamCardWrapper";
@@ -18,4 +19,5 @@ export const ContentSectionsMap = {
  threeImagesGrid: ThreeImagesGrid,
  textImageSection: TextImageSection,
  aboutDesignSection: AboutDesignSection,
+ imagesShowCase: ImagesShowCase,
 }

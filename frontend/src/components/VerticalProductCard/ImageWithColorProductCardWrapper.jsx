@@ -1,3 +1,4 @@
+import { Typography } from "antd";
 import { ImageWithColorProductCard } from "./ImageWithColorProductCard";
 
 export const ImageWithColorProductCardWrapper = ({ data=[]}) => {
@@ -13,7 +14,7 @@ export const ImageWithColorProductCardWrapper = ({ data=[]}) => {
 
       {/* Staggered Grid Layout */}
       <div className="grid grid-cols-2 gap-x-8 gap-y-0 max-w-7xl mx-auto">
-        {products.map((product, index) => {
+        {data.map((data, index) => {
           // Pattern: left-center (1st), top-right (2nd), top-left (3rd), repeat...
           const position = index % 3;
           
