@@ -2,27 +2,27 @@
 export const DataCategoriesClassicFurniture = [
   {
     id: 1,
-    name: "Aesthetic Chairs",
+    name: "Single Sofa",
     icon: "🪑",
-    image: "/ClassicFurniture/chair1.jpeg"
+    image: "/ClassicFurniture/sofa3.jpeg"
   },
   {
     id: 2,
-    name: "Artisan Home Decor",
+    name: "Artisan Chair",
     icon: "🖼️",
-    image: "/ClassicFurniture/decor1.jpeg"
+    image: "/ClassicFurniture/chair5.jpeg"
   },
   {
     id: 3,
-    name: "Bed & Bath Essentials",
+    name: "Bed Essentials",
     icon: "🛏️",
-    image: "/ClassicFurniture/bed1.jpeg"
+    image: "/ClassicFurniture/sofa1.jpeg"
   },
   {
     id: 4,
     name: "Blissful Living",
     icon: "🏡",
-    image: "/ClassicFurniture/sofa1.jpeg"
+    image: "/ClassicFurniture/sofa2.jpeg"
   },
   {
     id: 5,

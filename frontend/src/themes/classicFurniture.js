@@ -70,7 +70,7 @@ export default {
         showCategory: true,
         categories: DataCategoriesClassicFurniture,
         minHeight: "520px",
-        backgroundImage: "ThemePictures/bigsofa.webp",
+        backgroundImage: "/ClassicFurniture/carousel3.png",
       },
     },
     {
@@ -90,7 +90,7 @@ export default {
       {
         section: "carouselDynamicBanner",
         variant: "carouselBanner",
-        props: { title: "Products", showCategory: true, categories: DataCategoriesClassicFurniture, minHeight: "520px", backgroundImage: "ThemePictures/bigsofa.webp" }
+        props: { title: "Products", showCategory: true, categories: DataCategoriesClassicFurniture, minHeight: "520px", backgroundImage: "/ClassicFurniture/carousel3.png" }
       },
 
       {
@@ -111,7 +111,7 @@ export default {
     {
       section: "carouselDynamicBanner",
       variant: "carouselBanner",
-      props: { title: "Contact", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "380px", backgroundImage: "ThemePictures/bigsofa.webp" }
+      props: { title: "Contact", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "380px", backgroundImage: "/ClassicFurniture/carousel3.png" }
     },
 
     {
@@ -147,7 +147,7 @@ export default {
     {
       section: "carouselDynamicBanner",
       variant: "carouselBanner",
-      props: { title: "About", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "ThemePictures/bigsofa.webp" }
+      props: { title: "About", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "/ClassicFurniture/carousel3.png" }
     },
 
 
@@ -201,7 +201,7 @@ export default {
       {
         section: "carouselDynamicBanner",
         variant: "carouselBanner",
-        props: { title: "Faqs", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "ThemePictures/bigsofa.webp" }
+        props: { title: "Faqs", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "/ClassicFurniture/carousel3.png" }
       },
   
       {

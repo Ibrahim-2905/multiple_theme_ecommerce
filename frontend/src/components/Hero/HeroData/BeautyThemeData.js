@@ -3,10 +3,8 @@ const ClassicFurnitureHeroData = [
     subtitle: "20% OFF. END MONDAY",
     title: "Smart Table",
     description: "Save up to $500 on outdoor packages",
-    // For YouTube video:
-    // media: "https://www.youtube.com/watch?v=0JnGiu5ffMs",
     media: "/ClassicFurniture/carouselvideo.mp4",
-    mediaType: "video",
+    mediaType: "image",
     button: "SHOP NOW",
     position: "left",
     textColor: "text-black",
