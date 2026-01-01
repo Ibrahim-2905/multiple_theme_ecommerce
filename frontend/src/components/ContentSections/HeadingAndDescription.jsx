@@ -15,10 +15,10 @@ export default function HeadingAndDescription({
 
       <div className={`flex items-center justify-center ${marginTop} ${marginBottom}`}>
         <div className="max-w-4xl w-full text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">
+          <h1 className="text-6xl  text-gray-900 mb-6">
             {heading}
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
+          <p className="text-base sm:text-md lg:text-lg text-gray-600 leading-relaxed">
             {description}
           </p>
         </div>

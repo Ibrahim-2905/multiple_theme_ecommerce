@@ -52,7 +52,7 @@ const FollowsUsSection1 = ({images = []}) => {
   }, [images.length]);
 
   return (
-    <div className="w-full mb-5  bg-white">
+    <div className="w-full   bg-white">
       <div className="w-full">
         <div 
           ref={scrollRef} 

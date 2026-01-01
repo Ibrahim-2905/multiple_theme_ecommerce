@@ -4,8 +4,9 @@ import { Typography } from 'antd';
 import { useRouter } from 'next/navigation';
 
 export const ImagesShowCase = ({ 
-  title = "Product Features",
-  images = []
+  title = "",
+  data = [],
+  
 }) => {
   const router = useRouter();
 
@@ -32,12 +33,12 @@ export const ImagesShowCase = ({
       )}
 
       {/* Images Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
-        {images.map((item, index) => (
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-0">
+        {data.map((item, index) => (
           <div
             key={index}
             className={`relative overflow-hidden group cursor-pointer ${
-              images.length === 3 && index === 2 ? 'md:col-span-2 lg:col-span-1' : ''
+              data.length === 3 && index === 2 ? 'md:col-span-1 lg:col-span-1' : ''
             }`}
             onClick={() => handleImageClick(item.link)}
           >
@@ -49,8 +50,6 @@ export const ImagesShowCase = ({
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
             </div>
 
             {/* Optional Caption */}

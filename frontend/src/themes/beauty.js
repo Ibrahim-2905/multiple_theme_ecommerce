@@ -1,7 +1,10 @@
+import { DataImagesShowCase } from "@/components/ContentSections/DataContentSection/DataImagesShowCase";
 import { TeamData } from "@/components/ContentSections/DataContentSection/DataTeamCard";
 import { DataCategoriesClassicFurniture } from "@/components/CrouselDynamicBanner/DataCategoriesClassicFurniture";
 import { DataFollowUsSection2Furniture } from "@/components/FollowUsSection/DataFollowUsSection/DataFollowUsSection2Furniture";
+import { DataFollowUsSection3Beauty } from "@/components/FollowUsSection/DataFollowUsSection/DataFollowUsSection3Beauty";
 import { BeautyThemeData } from "@/components/Hero/HeroData/BeautyThemeData";
+import { brands } from "@/components/Marquee/MarqueeData";
 import { DataProductBeautyTheme } from "@/components/ProductLayouts/DataProductLayouts/DataProductBeautyTheme";
 import { DataProductClassicFurnitureTheme } from "@/components/ProductLayouts/DataProductLayouts/DataProductClassicFurnitureTheme";
 import { DataProductTabs } from "@/components/ProductLayouts/DataProductLayouts/DataProductTabs";
@@ -10,11 +13,11 @@ import { DataImageWithColorProduct } from "@/components/VerticalProductCard/Data
 export default {
   id: "beauty",
   header: "header_centered_menu",
-  footer: "big_footer",
+  footer: "blackFooter",
   colors: { bg: "#000", text: "#fff" },
   home: [
     { section: "hero", variant: "hero_carousel", props: { slides: BeautyThemeData } },
-    
+
     // {
     //     section: "verticalProductCard",
     //     variant: "imageWithColorProductCard",
@@ -22,47 +25,60 @@ export default {
     // },
 
 
+    {
+      section: "contentSections",
+      variant: "headingAndDescription",
+      props: { heading: "Hits of The Week", description: "Makeup essentials that won't break you out", marginTop: 0, marginBottom: 0 }
+    },
+
+
 
     {
       section: "productLayouts",
       variant: "productCarousel",
-      props:{products: DataProductBeautyTheme}
-    },
-
-   
-    {
-      section: "verticalProductCard",
-      variant: "imageWithContent",
-      props: {image: "/ThemeBeauty/vertical1.png", subtitle: "Our Skincare", title: "Personalized treatments that evolve with you & and your skin", description:"Everyone’s skin is different. Get a personalised treatment tailored to your skin’s unique needs with the flexibility to adjust anytime for lasting, visible results. Healthy radiant skin is for everyone. Experience accessible and affordable dermatologist expertise– no long waits, no high costs, only effective formulations made with proven ingredients.",  buttonText: "READ MORE", buttonBg:"#D4A574" , buttonTextColor:"text-white", link:"/products", reverseRow: false },
+      props: { products: DataProductBeautyTheme }
     },
 
     {
-      section: "contentSection",
-      variant:"headingAndDescription",
-      props:{heading: "New Products", description:"dsa"}
+      section: "contentSections",
+      variant: "imagesShowCase",
+      props: { data: DataImagesShowCase }
     },
-    
+
+    {
+      section: "contentSections",
+      variant: "headingAndDescription",
+      props: { heading: "Product Features", description: "Don't Miss Today's Featured Deals", marginTop: 0, marginBottom: 0 }
+    },
     {
       section: "productLayouts",
       variant: "productCardRowsForm",
-      props: { products: DataProductClassicFurnitureTheme, paginationType: "showMore", showProductTabs: true, productTabsData: DataProductTabs }
+      props: { products: DataProductBeautyTheme, paginationType: "showMore" }
     },
 
-    
+
     {
-      section: "emailSubscription",
-      variant: "emailSubscription4",
-      props: { title: "Join Our Email List", subtitle: "Signup for latest trends, products and inspiration", buttonText: "SUBSCRIBE"}
+      section: "verticalProductCard",
+      variant: "imageWithContent",
+      props: { image: "/ThemeBeauty/vertical1.png", subtitle: "Our Skincare", title: "Personalized treatments that evolve with you & and your skin", description: "Everyone’s skin is different. Get a personalised treatment tailored to your skin’s unique needs with the flexibility to adjust anytime for lasting, visible results. Healthy radiant skin is for everyone. Experience accessible and affordable dermatologist expertise– no long waits, no high costs, only effective formulations made with proven ingredients.", buttonText: "READ MORE", buttonBg: "#D4A574", buttonTextColor: "text-white", link: "/products", reverseRow: false },
     },
-{
-  section:"contentSections",
-  variant: "shippingFeatures",
 
-},
+    // {
+    //   section: "emailSubscription",
+    //   variant: "emailSubscription4",
+    //   props: { title: "Join Our Email List", subtitle: "Signup for latest trends, products and inspiration", buttonText: "SUBSCRIBE" }
+    // },
+
+    {
+          section: "marquee",
+          variant: "default",
+          props: { brands },
+        },
+    
     {
       section: "followUsSection",
       variant: "followUsSection1",
-      props: { images: DataFollowUsSection2Furniture }
+      props: { images: DataFollowUsSection3Beauty }
     },
   ],
 
@@ -134,14 +150,14 @@ export default {
     {
       section: "emailSubscription",
       variant: "emailSubscription3",
-      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image:"https://netro-store-newdemo46.myshopify.com/cdn/shop/files/1009.jpg?v=1745561995&amp;width=1536&quot" }
+      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "https://netro-store-newdemo46.myshopify.com/cdn/shop/files/1009.jpg?v=1745561995&amp;width=1536&quot" }
     },
 
     {
-          section: "followUsSection",
-          variant: "followUsSection1",
-          props: {images: DataFollowUsSection2Furniture}
-        },
+      section: "followUsSection",
+      variant: "followUsSection1",
+      props: { images: DataFollowUsSection2Furniture }
+    },
 
   ],
 
@@ -183,49 +199,49 @@ export default {
       props: { TeamData: TeamData }
     },
 
-    
+
 
     {
       section: "emailSubscription",
       variant: "emailSubscription3",
-      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image:"https://netro-store-newdemo46.myshopify.com/cdn/shop/files/1009.jpg?v=1745561995&amp;width=1536&quot" }
+      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "https://netro-store-newdemo46.myshopify.com/cdn/shop/files/1009.jpg?v=1745561995&amp;width=1536&quot" }
     },
 
     {
-          section: "followUsSection",
-          variant: "followUsSection1",
-          props: {images: DataFollowUsSection2Furniture}
-        },
+      section: "followUsSection",
+      variant: "followUsSection1",
+      props: { images: DataFollowUsSection2Furniture }
+    },
 
   ],
 
 
 
-   faqs: [
-  
-      {
-        section: "carouselDynamicBanner",
-        variant: "carouselBanner",
-        props: { title: "Faqs", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "/ClassicFurniture/carousel3.png" }
-      },
-  
-      {
-        section:"contentSection",
-        variant: "headingAndDescription",
-        props:{heading:"Frequently Asked Questions", description:"Ask Any Thing"}
-      },
-  
-      {
-        section: "accordianFaqs",
-        variant: "accordianFaqs"
-      },
-  
-       {
-        section: "emailSubscription",
-        variant: "emailSubscription4",
-        props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit" }
-      }
-    ]
+  faqs: [
+
+    {
+      section: "carouselDynamicBanner",
+      variant: "carouselBanner",
+      props: { title: "Faqs", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "/ClassicFurniture/carousel3.png" }
+    },
+
+    {
+      section: "contentSection",
+      variant: "headingAndDescription",
+      props: { heading: "Frequently Asked Questions", description: "Ask Any Thing" }
+    },
+
+    {
+      section: "accordianFaqs",
+      variant: "accordianFaqs"
+    },
+
+    {
+      section: "emailSubscription",
+      variant: "emailSubscription4",
+      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit" }
+    }
+  ]
 
 
 }
