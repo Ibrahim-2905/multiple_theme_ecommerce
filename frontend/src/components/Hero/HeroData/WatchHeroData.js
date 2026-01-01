@@ -11,7 +11,8 @@ export const WatchHeroData = [
     position: "left",
     textColor:"text-black",
     buttonBg: "bg-black",      
-    buttonText: "text-white"   
+    buttonText: "text-white"   ,
+    link:"/shop",
   },
   {
     subtitle: "Discover New Arrivals",
@@ -23,6 +24,7 @@ export const WatchHeroData = [
     position: "left",
     textColor:"text-white",
     buttonBg: "bg-white",      
-    buttonText: "text-black"   
+    buttonText: "text-black"  ,
+    link:"/shop", 
   }
 ];

@@ -19,7 +19,7 @@ const JourneyIcon = () => (
   </svg>
 );
 
-const  AboutDesignSection = () => {
+const  AboutDesignSection = ({image}) => {
   // Dynamic data structure
   const cardsData = [
     {
@@ -43,14 +43,14 @@ const  AboutDesignSection = () => {
   ];
 
   // Dynamic background image
-  const backgroundImage = "ThemePictures/herochair.png";
+
 
   return (
     <div className="relative my-15 w-full min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${image})`}}
       >
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>

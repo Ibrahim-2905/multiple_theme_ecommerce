@@ -21,6 +21,14 @@ export default function Checkout(){
             <CheckoutForm />
 
         )}
+        {themeId == "beauty" &&(
+            <CheckoutForm />
+
+        )}
+        {themeId == "perfume" &&(
+            <CheckoutForm2 />
+
+        )}
             
         </div>
     )

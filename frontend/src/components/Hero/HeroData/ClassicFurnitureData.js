@@ -8,10 +8,11 @@ const ClassicFurnitureHeroData = [
     media: "/ClassicFurniture/carouselvideo.mp4",
     mediaType: "video",
     button: "SHOP NOW",
-    position: "left",
     textColor: "text-black",
-    buttonBg: "bg-black",
-    buttonText: "text-white"
+    buttonBg: "bg-white",
+    buttonText: "text-black",
+    position:"center",
+    link:"/shop",
   },
   {
     subtitle: "30% OFF.END MONDAY",
@@ -20,10 +21,11 @@ const ClassicFurnitureHeroData = [
     media: "/ClassicFurniture/carousel1.jpeg",
     mediaType: "image",
     button: "BUY NOW",
-    position: "left",
+    position: "center",
     textColor: "text-black",
     buttonBg: "bg-black",
-    buttonText: "text-white"
+    buttonText: "text-white",
+    link:"/shop",
   }
 ];
 

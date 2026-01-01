@@ -133,7 +133,7 @@ export default {
     {
       section: "carouselDynamicBanner",
       variant: "carouselBanner",
-      props: { title: "Contact", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "380px", backgroundImage: "/ClassicFurniture/carousel3.png" }
+      props: { title: "Contact", showCategory: false, minHeight: "380px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
     },
 
     {
@@ -151,13 +151,15 @@ export default {
     {
       section: "emailSubscription",
       variant: "emailSubscription3",
-      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "https://netro-store-newdemo46.myshopify.com/cdn/shop/files/1009.jpg?v=1745561995&amp;width=1536&quot" }
+      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "/ThemeBeauty/about4.png" }
     },
 
-    {
+    
+
+     {
       section: "followUsSection",
       variant: "followUsSection1",
-      props: { images: DataFollowUsSection2Furniture }
+      props: { images: DataFollowUsSection3Beauty }
     },
 
   ],
@@ -169,24 +171,25 @@ export default {
     {
       section: "carouselDynamicBanner",
       variant: "carouselBanner",
-      props: { title: "About", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "/ClassicFurniture/carousel3.png" }
+      props: { title: "About", showCategory: false, minHeight: "320px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
     },
 
 
     {
       section: "contentSection",
       variant: "textImageSection",
-      props: { flexReversed: false, title: "Our Story", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemePictures/girl1.webp", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
+      props: { flexReversed: false, title: "Our Story", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemeBeauty/about1.png", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
     },
     {
       section: "contentSection",
       variant: "textImageSection",
-      props: { flexReversed: true, title: "Who We Are?", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemePictures/girl2.webp", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
+      props: { flexReversed: true, title: "Who We Are?", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemeBeauty/about2.png", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
     },
 
     {
       section: "contentSection",
       variant: "aboutDesignSection",
+      props:{image:"ThemeBeauty/about3.png"}
 
     },
     {
@@ -205,13 +208,13 @@ export default {
     {
       section: "emailSubscription",
       variant: "emailSubscription3",
-      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "https://netro-store-newdemo46.myshopify.com/cdn/shop/files/1009.jpg?v=1745561995&amp;width=1536&quot" }
+      props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "ThemeBeauty/about4.png" }
     },
 
     {
       section: "followUsSection",
       variant: "followUsSection1",
-      props: { images: DataFollowUsSection2Furniture }
+      props: { images: DataFollowUsSection3Beauty }
     },
 
   ],
@@ -223,7 +226,7 @@ export default {
     {
       section: "carouselDynamicBanner",
       variant: "carouselBanner",
-      props: { title: "Faqs", showCategory: false, categories: DataCategoriesClassicFurniture, minHeight: "320px", backgroundImage: "/ClassicFurniture/carousel3.png" }
+      props: { title: "Faqs", showCategory: false, minHeight: "320px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
     },
 
     {
@@ -239,7 +242,7 @@ export default {
 
     {
       section: "emailSubscription",
-      variant: "emailSubscription4",
+      variant: "emailSubscription2",
       props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit" }
     }
   ]

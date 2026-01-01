@@ -2,25 +2,35 @@ export const BeautyThemeData = [
   {
     subtitle: "SAVE UP TO 20%",
     title: "BE YOURSELF MORE DO CARE MORE",
-    // description: "Save up to $500 on outdoor packages",
     media: "ThemeBeauty/beautycarousel1.png",
     mediaType: "image",
     button: "SHOP NOW",
-    position: "left",
-    textColor: "text-black",
-    buttonBg: "bg-black",
+    position: "center",
+    link:"/shop",
+
+    // Option 1: Use textColor for all text elements
+    // textColor: "text-black",
+
+    // Option 2: Customize each element individually (overrides textColor)
+    subtitleColor: "text-[#CEA08A]",
+    titleColor: "text-black",
+    descriptionColor: "text-gray-700",
+
+    buttonBg: "bg-[#CEA08A]",
     buttonText: "text-white"
   },
+
   {
+    link:"/shop",
     subtitle: "SAVE UP TO 20%",
     title: "BE YOURSELF MORE DO CARE MORE",
-    // description: "Just from 5$-20$",
     media: "ThemeBeauty/beautycarousel2.png",
     mediaType: "image",
     button: "ALL PRODUCTS",
-    position: "left",
-    textColor: "text-black",
-    buttonBg: "bg-black",
+    position: "center",
+    subtitleColor: "text-[#CEA08A]",
+    titleColor: "text-black",
+    buttonBg: "bg-[#CEA08A]",
     buttonText: "text-white"
   }
 ];

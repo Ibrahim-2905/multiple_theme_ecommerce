@@ -9,7 +9,8 @@ export const FurnitureHeroData = [
     position: "left",
     textColor:"text-black",
     buttonBg: "bg-black",      
-    buttonText: "text-white" 
+    buttonText: "text-white" ,
+    link:"/shop",
   },
   {
     subtitle: "30% OFF.END MONDAY",
@@ -21,6 +22,7 @@ export const FurnitureHeroData = [
     position: "right",
     textColor:"text-black",
     buttonBg: "bg-black",      
-    buttonText: "text-white" 
+    buttonText: "text-white" ,
+    link:"/shop",
   }
 ];
