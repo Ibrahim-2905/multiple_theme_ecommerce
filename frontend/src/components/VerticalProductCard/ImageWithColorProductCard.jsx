@@ -17,15 +17,12 @@ export const ImageWithColorProductCard = ({
   return (
     <div className="relative inline-block">
       {/* Background color block - positioned absolutely */}
-      <div 
-        className="absolute top-0 right-0 w-[88%] h-[70%] -z-10"
-        style={{ backgroundColor: bgcolor }}
-      />
+     
       
       {/* Main content */}
-      <div className="flex flex-col gap-4 p-6">
+      <div className="flex flex-col  p-6">
         {/* Image container */}
-        <div className="relative w-full aspect-square bg-[#F5E6D3] rounded-sm overflow-hidden">
+        <div className="relative w-full aspect-square  overflow-hidden">
           <img 
             src={image}
             alt={title}
@@ -43,12 +40,15 @@ export const ImageWithColorProductCard = ({
         </Typography.Title>
         
         {/* Button */}
+        <div>
+
         <AnimatedButton
           text={buttonText}
-        //   onlyBottomBorder
+          onlyBottomBorder
           textColor="text-black"
           onClick={()=> router.push(link)}
         />
+        </div>
       </div>
     </div>
   );

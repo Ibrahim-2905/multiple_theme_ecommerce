@@ -1,5 +1,6 @@
 import { DataImagesShowCase } from "@/components/ContentSections/DataContentSection/DataImagesShowCase";
 import { TeamData } from "@/components/ContentSections/DataContentSection/DataTeamCard";
+import { DataCategoriesBeauty } from "@/components/CrouselDynamicBanner/DataCategoriesBeauty";
 import { DataCategoriesClassicFurniture } from "@/components/CrouselDynamicBanner/DataCategoriesClassicFurniture";
 import { DataFollowUsSection2Furniture } from "@/components/FollowUsSection/DataFollowUsSection/DataFollowUsSection2Furniture";
 import { DataFollowUsSection3Beauty } from "@/components/FollowUsSection/DataFollowUsSection/DataFollowUsSection3Beauty";
@@ -18,11 +19,11 @@ export default {
   home: [
     { section: "hero", variant: "hero_carousel", props: { slides: BeautyThemeData } },
 
-    // {
-    //     section: "verticalProductCard",
-    //     variant: "imageWithColorProductCard",
-    //     props: {data: DataImageWithColorProduct}
-    // },
+    {
+        section: "verticalProductCard",
+        variant: "imageWithColorProductCard",
+        props: {data: DataImageWithColorProduct}
+    },
 
 
     {
@@ -89,9 +90,9 @@ export default {
       props: {
         title: "Shop",
         showCategory: true,
-        categories: DataCategoriesClassicFurniture,
+        categories: DataCategoriesBeauty,
         minHeight: "520px",
-        backgroundImage: "/ClassicFurniture/carousel3.png",
+        backgroundImage: "/ThemeBeauty/beautycarousel3.png",
       },
     },
     {
@@ -111,13 +112,13 @@ export default {
       {
         section: "carouselDynamicBanner",
         variant: "carouselBanner",
-        props: { title: "Products", showCategory: true, categories: DataCategoriesClassicFurniture, minHeight: "520px", backgroundImage: "/ClassicFurniture/carousel3.png" }
+        props: { title: "Products", showCategory: true, categories: DataCategoriesBeauty, minHeight: "520px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
       },
 
       {
         section: "productLayouts",
         variant: "productGridView",
-        props: { products: DataProductClassicFurnitureTheme, paginationType: "pagination", gridColumns: 4 }
+        props: { products: DataProductBeautyTheme, paginationType: "pagination", gridColumns: 4 }
       },
 
       {
