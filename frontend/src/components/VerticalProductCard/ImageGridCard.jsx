@@ -14,7 +14,7 @@ export function ImageGridCard({ title, buttonText, image, link }) {
 
     return (
         <div 
-            className="relative w-full h-64 sm:h-72 md:h-80 lg:h-96 overflow-hidden group cursor-pointer"
+            className="relative w-full h-64 sm:h-72 md:h-80 lg:h-80 overflow-hidden group cursor-pointer"
             onClick={handleClick}
         >
             {/* Background Image */}

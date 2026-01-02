@@ -3,23 +3,23 @@
 
 export function ReviewCard({ image, review, name, stars }) {
     return (
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8 lg:gap-12 bg-white rounded-2xl shadow-lg p-6 sm:p-8 md:p-10 lg:p-12 max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 bg-white rounded-xl shadow-lg  max-w-3xl mx-auto">
             {/* Image */}
-            <div className="w-full md:w-64 lg:w-72 flex-shrink-0">
+            <div className="w-full md:w-48 lg:w-56 flex-shrink-0">
                 <img
                     src={image}
                     alt={name}
-                    className="w-full h-64 md:h-80 object-cover rounded-xl"
+                    className="w-full h-48 md:h-56 object-cover"
                 />
             </div>
 
             {/* Content */}
             <div className="flex-1 text-center md:text-left">
-                <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed mb-6 md:mb-8">
+                <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-4 md:mb-5">
                     {review}
                 </p>
 
-                <h4 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-3">
+                <h4 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2">
                     {name}
                 </h4>
 
@@ -28,7 +28,7 @@ export function ReviewCard({ image, review, name, stars }) {
                     {[...Array(5)].map((_, index) => (
                         <span
                             key={index}
-                            className={`text-xl sm:text-2xl ${
+                            className={`text-lg sm:text-xl ${
                                 index < stars ? "text-yellow-400" : "text-gray-300"
                             }`}
                         >

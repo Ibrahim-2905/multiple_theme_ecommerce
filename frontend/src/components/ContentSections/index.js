@@ -5,6 +5,7 @@ import { ImagesShowCase } from "./ImagesShowCase";
 import { ReviewCardWrapper } from "./ReviewCardWrapper";
 import ShippingFeatures from "./ShippingFeatures";
 import StoreTimings from "./StoreTimings";
+import { StoryCard } from "./StoryCard";
 import { TeamCardWrapper } from "./TeamCardWrapper";
 import TextImageSection from "./TextImageSection";
 import ThreeImagesGrid from "./ThreeImagesGrid";
@@ -22,4 +23,5 @@ export const ContentSectionsMap = {
  aboutDesignSection: AboutDesignSection,
  imagesShowCase: ImagesShowCase,
  reviewCard: ReviewCardWrapper,
+ storyCard: StoryCard,
 }

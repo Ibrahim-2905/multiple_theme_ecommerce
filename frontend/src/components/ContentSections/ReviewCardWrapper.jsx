@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import { ReviewCard } from "./ReviewCard";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function ReviewCardWrapper({ reviews = [], title = "Customer Reviews" }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,47 +28,29 @@ export function ReviewCardWrapper({ reviews = [], title = "Customer Reviews" }) 
                 </h2>
             )}
 
-            {/* Mobile Navigation - Top */}
-            <div className="flex md:hidden justify-center gap-4 mb-6">
+            {/* Review Card with Navigation */}
+            <div className="relative flex items-center justify-center gap-4 max-w-5xl mx-auto">
+                {/* Left Button */}
                 <button
                     onClick={prevSlide}
-                    className="w-12 h-12 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors duration-300"
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors duration-300 flex-shrink-0"
                     aria-label="Previous review"
                 >
-                    <span className="text-2xl text-gray-700">‹</span>
-                </button>
-                <button
-                    onClick={nextSlide}
-                    className="w-12 h-12 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors duration-300"
-                    aria-label="Next review"
-                >
-                    <span className="text-2xl text-gray-700">›</span>
-                </button>
-            </div>
-
-            {/* Review Card with Desktop Navigation */}
-            <div className="relative">
-                {/* Desktop Left Button */}
-                <button
-                    onClick={prevSlide}
-                    className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 lg:-translate-x-20 w-12 h-12 rounded-full bg-gray-200 hover:bg-gray-300 items-center justify-center transition-colors duration-300 z-10"
-                    aria-label="Previous review"
-                >
-                    <span className="text-2xl text-gray-700">‹</span>
+                    <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
                 </button>
 
                 {/* Review Card */}
-                <div className="transition-opacity duration-500">
+                <div className="flex-1 transition-opacity duration-500">
                     <ReviewCard {...reviews[currentIndex]} />
                 </div>
 
-                {/* Desktop Right Button */}
+                {/* Right Button */}
                 <button
                     onClick={nextSlide}
-                    className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 lg:translate-x-20 w-12 h-12 rounded-full bg-gray-200 hover:bg-gray-300 items-center justify-center transition-colors duration-300 z-10"
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors duration-300 flex-shrink-0"
                     aria-label="Next review"
                 >
-                    <span className="text-2xl text-gray-700">›</span>
+                    <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
                 </button>
             </div>
 
@@ -80,7 +63,7 @@ export function ReviewCardWrapper({ reviews = [], title = "Customer Reviews" }) 
                             onClick={() => setCurrentIndex(index)}
                             className={`w-2 h-2 rounded-full transition-all duration-300 ${
                                 index === currentIndex
-                                    ? "bg-gray-800 w-8"
+                                    ? "bg-gray-800 w-2"
                                     : "bg-gray-300"
                             }`}
                             aria-label={`Go to review ${index + 1}`}
