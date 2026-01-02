@@ -4,7 +4,7 @@ import { useState } from "react";
 import { ReviewCard } from "./ReviewCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export function ReviewCardWrapper({ reviews = [], title = "Customer Reviews" }) {
+export function ReviewCardWrapper({ reviews = [] }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const prevSlide = () => {
@@ -20,14 +20,8 @@ export function ReviewCardWrapper({ reviews = [], title = "Customer Reviews" }) 
     }
 
     return (
-        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-12 md:py-16">
-            {/* Title */}
-            {title && (
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-12 text-gray-900">
-                    {title}
-                </h2>
-            )}
-
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-10">
+           
             {/* Review Card with Navigation */}
             <div className="relative flex items-center justify-center gap-4 max-w-5xl mx-auto">
                 {/* Left Button */}

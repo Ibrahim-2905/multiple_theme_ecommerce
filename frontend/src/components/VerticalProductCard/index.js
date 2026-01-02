@@ -1,3 +1,4 @@
+import { BlogCardWrapper } from "./BlogCardWrapper";
 import { ImageGridCardWrapper } from "./ImageGridCardWrapper";
 import { ImageWithColorProductCardWrapper } from "./ImageWithColorProductCardWrapper";
 import { ImageWithContent } from "./ImageWithContent";
@@ -12,5 +13,5 @@ export const VerticalProductCardMap ={
     imageWithContent: ImageWithContent,
     imageGridCard: ImageGridCardWrapper,
     picturesWithOverlayCard: PicturesWithOverlayCard,
-
+    blogCard: BlogCardWrapper,
 }

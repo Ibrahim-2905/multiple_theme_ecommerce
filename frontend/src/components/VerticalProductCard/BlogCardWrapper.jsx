@@ -66,7 +66,7 @@ export function BlogCardWrapper({ blogs = [] }) {
           </button>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-opacity duration-500">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 transition-opacity duration-500">
             {visibleCards.map((blog, index) => (
               <div
                 key={`${currentIndex}-${index}`}
@@ -97,7 +97,7 @@ export function BlogCardWrapper({ blogs = [] }) {
               disabled={isTransitioning}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 index === currentIndex
-                  ? "bg-gray-800 w-8"
+                  ? "bg-gray-800 "
                   : "bg-gray-300 hover:bg-gray-400"
               }`}
               aria-label={`Go to blog ${index + 1}`}

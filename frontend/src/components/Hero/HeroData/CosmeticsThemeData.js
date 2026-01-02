@@ -4,10 +4,10 @@
       image: "/ThemeCosmetics/cosmeticscarousel1.png",
       buttonProps: {
         text: "SHOP NOW",
-        bgColor: "bg-white",
-        textColor: "text-black",
+        textColor: "text-white",
         hoverBgColor: "hover:bg-gray-100",
         onlyBottomBorder: true,
+        onClick: ()=> router.push("/shop")
       }
     },
     {
@@ -15,9 +15,11 @@
       image: "/ThemeCosmetics/cosmeticscarousel2.png",
       buttonProps: {
         text: "SHOP NOW",
-        bgColor: "bg-white",
-        textColor: "text-black",
-        hoverBgColor: "hover:bg-gray-100"
+        textColor: "text-white",
+        hoverBgColor: "hover:bg-gray-100",
+        onlyBottomBorder: true,
+        onClick: ()=> router.push("/shop")
+      
       }
     }
   ];

@@ -1,9 +1,13 @@
 import { DataImagesShowCase } from "@/components/ContentSections/DataContentSection/DataImagesShowCase";
+import { DataReviewCard } from "@/components/ContentSections/DataContentSection/DataReviewCard";
+import { DataReviewCardCosmetics } from "@/components/ContentSections/DataContentSection/DataReviewCardCosmetics";
 import { TeamData } from "@/components/ContentSections/DataContentSection/DataTeamCard";
 import { DataCategoriesBeauty } from "@/components/CrouselDynamicBanner/DataCategoriesBeauty";
 import { DataCategoriesClassicFurniture } from "@/components/CrouselDynamicBanner/DataCategoriesClassicFurniture";
+import { DataCategoriesCosmetics } from "@/components/CrouselDynamicBanner/DataCategoriesCosmetics";
 import { DataFollowUsSection2Furniture } from "@/components/FollowUsSection/DataFollowUsSection/DataFollowUsSection2Furniture";
 import { DataFollowUsSection3Beauty } from "@/components/FollowUsSection/DataFollowUsSection/DataFollowUsSection3Beauty";
+import { DataFollowUsSection5Cosmetics } from "@/components/FollowUsSection/DataFollowUsSection/DataFollowUsSection5Cosmetics";
 import { BeautyThemeData } from "@/components/Hero/HeroData/BeautyThemeData";
 import { CosmeticsThemeData } from "@/components/Hero/HeroData/CosmeticsThemeData";
 import { DataHeroGridCard } from "@/components/Hero/HeroData/DataHeroGridCard";
@@ -12,6 +16,7 @@ import { DataProductBeautyTheme } from "@/components/ProductLayouts/DataProductL
 import { DataProductClassicFurnitureTheme } from "@/components/ProductLayouts/DataProductLayouts/DataProductClassicFurnitureTheme";
 import { DataProductCosmeticsTheme } from "@/components/ProductLayouts/DataProductLayouts/DataProductCosmeticsTheme";
 import { DataProductTabs } from "@/components/ProductLayouts/DataProductLayouts/DataProductTabs";
+import { DataBlogCard } from "@/components/VerticalProductCard/DataBlogCard";
 import { DataImageWithColorProduct } from "@/components/VerticalProductCard/DataImageWithColorProductCard";
 
 export default {
@@ -73,16 +78,38 @@ export default {
             variant: "productCarousel",
             props: { products: DataProductCosmeticsTheme }
         },
+        
+        
 
+         {
+            section: "contentSections",
+            variant: "headingAndDescription",
+            props: { heading: "Testimonials & Reviews", marginTop: "mt-20", marginBottom: 0 }
+        },
 
-
-
+        {
+                    section:"contentSections",
+                    variant:"reviewCard",
+                    props:{reviews: DataReviewCardCosmetics}
+                },
 
         {
             section: "marquee",
             variant: "default",
             props: { brands },
         },
+
+         {
+            section: "contentSections",
+            variant: "headingAndDescription",
+            props: { heading: "Our Blogs", description: "Your guide to chic and comfortable looks", marginTop: "mt-10", marginBottom: 0 }
+        },
+
+        {
+            section:"verticalProductCard",
+            variant:"blogCard",
+            props:{blogs: DataBlogCard}
+        }
 
     ],
 
@@ -93,9 +120,9 @@ export default {
             props: {
                 title: "Shop",
                 showCategory: true,
-                categories: DataCategoriesBeauty,
+                categories: DataCategoriesCosmetics,
                 minHeight: "520px",
-                backgroundImage: "/ThemeBeauty/beautycarousel3.png",
+                backgroundImage: "/ThemeCosmetics/cosmeticscarousel3.png",
             },
         },
         {
@@ -115,13 +142,13 @@ export default {
             {
                 section: "carouselDynamicBanner",
                 variant: "carouselBanner",
-                props: { title: "Products", showCategory: true, categories: DataCategoriesBeauty, minHeight: "520px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
+                props: { title: "Products", showCategory: true, categories: DataCategoriesCosmetics, minHeight: "520px", backgroundImage: "/ThemeBeauty/cosmeticscarousel3.png", }
             },
 
             {
                 section: "productLayouts",
                 variant: "productGridView",
-                props: { products: DataProductBeautyTheme, paginationType: "pagination", gridColumns: 4 }
+                props: { products: DataProductCosmeticsTheme, paginationType: "pagination", gridColumns: 4 }
             },
 
             {
@@ -136,7 +163,7 @@ export default {
         {
             section: "carouselDynamicBanner",
             variant: "carouselBanner",
-            props: { title: "Contact", showCategory: false, minHeight: "380px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
+            props: { title: "Contact", showCategory: false, minHeight: "380px", backgroundImage: "/ThemeBeauty/cosmeticscarousel3.png", }
         },
 
         {
@@ -154,7 +181,7 @@ export default {
         {
             section: "emailSubscription",
             variant: "emailSubscription3",
-            props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "/ThemeBeauty/about4.png" }
+            props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "/ThemeCosmetics/email.png" }
         },
 
 
@@ -162,7 +189,7 @@ export default {
         {
             section: "followUsSection",
             variant: "followUsSection1",
-            props: { images: DataFollowUsSection3Beauty }
+            props: { images: DataFollowUsSection5Cosmetics }
         },
 
     ],
@@ -174,25 +201,25 @@ export default {
         {
             section: "carouselDynamicBanner",
             variant: "carouselBanner",
-            props: { title: "About", showCategory: false, minHeight: "320px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
+            props: { title: "About", showCategory: false, minHeight: "320px", backgroundImage: "/ThemeCosmetics/cosmeticscarousel3.png" }
         },
 
 
         {
             section: "contentSection",
             variant: "textImageSection",
-            props: { flexReversed: false, title: "Our Story", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemeBeauty/about1.png", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
+            props: { flexReversed: false, title: "Our Story", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemeCosmetics/about1.png", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
         },
         {
             section: "contentSection",
             variant: "textImageSection",
-            props: { flexReversed: true, title: "Who We Are?", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemeBeauty/about2.png", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
+            props: { flexReversed: true, title: "Who We Are?", subtitle: "THE HIGH STRESS FAVOURITE", image: "ThemeCosmetics/about2.png", description: "Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Vestibulum volutpat pretium libero. In ut quam vitae odio lacinia tincidunt. Etiam ut purus mattis mauris sodales aliquam. Aenean massa.   In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Vivamus consectetuer hendrerit lacus. In hac habitasse platea dictumst. Ut tincidunt tincidunt erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." }
         },
 
         {
             section: "contentSection",
             variant: "aboutDesignSection",
-            props: { image: "ThemeBeauty/about3.png" }
+            props: { image: "ThemeCosmetics/about3.png" }
 
         },
         {
@@ -211,13 +238,13 @@ export default {
         {
             section: "emailSubscription",
             variant: "emailSubscription3",
-            props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "ThemeBeauty/about4.png" }
+            props: { title: "Our Newsleter", subtitle: "Join our list and get 15% off your first purchase! Don’t worry we don’t spam", buttonText: "Submit", image: "ThemeCosmetics/email.png" }
         },
 
         {
             section: "followUsSection",
             variant: "followUsSection1",
-            props: { images: DataFollowUsSection3Beauty }
+            props: { images: DataFollowUsSection5Cosmetics }
         },
 
     ],
@@ -229,7 +256,7 @@ export default {
         {
             section: "carouselDynamicBanner",
             variant: "carouselBanner",
-            props: { title: "Faqs", showCategory: false, minHeight: "320px", backgroundImage: "/ThemeBeauty/beautycarousel3.png" }
+            props: { title: "Faqs", showCategory: false, minHeight: "320px", backgroundImage: "/ThemeCosmetics/cosmeticscarousel3.png" }
         },
 
         {

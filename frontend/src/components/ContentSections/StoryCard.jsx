@@ -13,7 +13,7 @@ export function StoryCard({
         <div className="hidden md:grid md:grid-cols-2 md:gap-8 lg:gap-12 items-start">
           {/* Left - Title & Description */}
           <div className="flex flex-col justify-start text-left">
-            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-4 lg:mb-6">
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl  text-gray-900 mb-4 lg:mb-6">
               {title}
             </h2>
             <p className="text-base lg:text-lg text-gray-600 leading-relaxed">

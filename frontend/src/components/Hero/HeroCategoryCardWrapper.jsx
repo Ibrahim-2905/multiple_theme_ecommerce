@@ -3,7 +3,7 @@ import { HeroCategoryCard } from "./HeroCategoryCard";
 export function HeroCategoryCardWrapper({ cards = [] }) {
   return (
     <div className="w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
         {cards.map((card, index) => (
           <HeroCategoryCard
             key={index}
