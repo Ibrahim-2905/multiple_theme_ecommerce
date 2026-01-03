@@ -35,7 +35,7 @@ export default function BrandMarquee({ brands = [], text = "TRUSTED BRAND", spee
                 <img
                   src={brand.logo}
                   alt={brand.name}
-                  className="h-8 w-auto object-contain grayscale sepia hue-rotate-190 saturate-200 brightness-95"
+                  className="h-13 w-auto object-contain grayscale sepia hue-rotate-190 saturate-200 brightness-95"
                 />
               
                 <span className="text-xs font-semibold tracking-widest text-gray-400 whitespace-nowrap">

@@ -124,6 +124,7 @@ export default {
                 minHeight: "520px",
                 backgroundImage: "/ThemeCosmetics/cosmeticscarousel3.png",
             },
+
         },
         {
             section: "shopLayout",

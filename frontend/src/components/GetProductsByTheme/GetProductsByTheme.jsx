@@ -4,6 +4,7 @@ import { DataProductClassicFurnitureTheme } from "../ProductLayouts/DataProductL
 import { DataProductBeautyTheme } from "../ProductLayouts/DataProductLayouts/DataProductBeautyTheme";
 import { DataProductPerfumeTheme } from "../ProductLayouts/DataProductLayouts/DataProductPerfumeTheme";
 import { DataProductCosmeticsTheme } from "../ProductLayouts/DataProductLayouts/DataProductCosmeticsTheme";
+import { DataProductClothingTheme } from "../ProductLayouts/DataProductLayouts/DataProductClothingTheme";
 
 const PRODUCT_MAP = {
   time: DataProductWatchTheme,
@@ -12,6 +13,7 @@ const PRODUCT_MAP = {
   beauty: DataProductBeautyTheme,
   perfume: DataProductPerfumeTheme,
   cosmetics: DataProductCosmeticsTheme,
+  clothing: DataProductClothingTheme,
 };
 
 export function GetProductsByTheme(themeId) {

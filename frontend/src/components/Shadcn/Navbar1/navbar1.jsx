@@ -134,7 +134,7 @@ const Navbar1 = ({
   const wishlistCount = wishlistItems.length;
 
   return (
-    <section className="py-7 flex justify-center">
+    <section className="py-7 px-4 flex justify-center">
       <div className="container">
         <nav className="hidden lg:flex items-center justify-between">
           <div className="flex items-center">

@@ -1,5 +1,6 @@
 import AboutDesignSection from "./AboutDesignSection";
 import AgencySection from "./AgencySection";
+import Features from "./Features";
 import HeadingAndDescription from "./HeadingAndDescription";
 import { ImagesShowCase } from "./ImagesShowCase";
 import { ReviewCardWrapper } from "./ReviewCardWrapper";
@@ -24,4 +25,5 @@ export const ContentSectionsMap = {
  imagesShowCase: ImagesShowCase,
  reviewCard: ReviewCardWrapper,
  storyCard: StoryCard,
+ features: Features,
 }
